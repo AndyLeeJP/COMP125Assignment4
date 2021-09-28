@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    color: #e95815;
+}
+
+
+#allPage {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+	width: 150px;
+	float: left;
+}
+
+.button {
+	cursor: pointer;
+	background-color: rgb(35, 108, 168);
+	color: rgb(252, 252, 252);
+	font-size: 15px;
+	height: 25px;
+}
+
+fieldset {
+	border: thin solid rgb(71, 255, 80);
+}
+
+
+legend {
+	background-color: #ececec;
+	border-radius: 3px;
+}
+
+
+.errorMess {
+    color: #f10000;
+    padding-left: 150px;
+}
+
+.complete {
+	color: #000000;
+	background-color: #1c90fd;
+
+}
+

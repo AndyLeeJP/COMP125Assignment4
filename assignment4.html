@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Resgistration</title>
+        <meta content="JavaScript, js, COMP125" name="keywords">
+        <meta content="Registration form, JavaScript, js" name="description">
+        <link href="assignment4.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+        <div id="allPage">
+            <fieldset id="successMessage" class="complete"></fieldset>
+            <h1>Registration</h1>
+            <h4>Please fill in all the fields bellow</h4>
+            <article>
+                <form method="post" id="registerSheet" onsubmit="accountInfo()">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div>
+                            <label for="firstNameInfo">First Name:</label>
+                            <input type="text" name="firstNameInfo" id="firstNameInfo" required="required">
+                            <p id="firstNameError" class="errorMessage"></p>
+                        </div>
+                        <div>
+                        <label for="lastNameInfo">Last Name:</label>
+                        <input type="text" name="lastNameInfo" id="lastNameInfo" required="required">
+                        <p id="lastNameError" class="errorMessage"></p>
+                        </div>
+                        <div>
+                            <label for="ageInfo">Age:</label>
+                            <input type="number" min="18" name="ageInfo" id="ageInfo" placeholder="must be 18+" required="required">
+                            <p id="ageError" class="errorMessage"></p>
+                        </div>
+                        <div>
+                            <label for="addressInfo">Address:</label>
+                            <input type="text" name="addressInfo" id="addressInfo" required="required">
+                            <p id="addressError" class="errorMessage"></p>
+                        </div>
+                        <div>
+                        <label for="cityInfo">City:</label>
+                        <input type="text" name="cityInfo" id="cityInfo" required="required">
+                        <p id="cityError" class="errorMessage"></p>
+                        </div>
+                        <div>
+                            <label for="PostalCodeInfo">Postal Code:</label>
+                            <input type="text" name="PostalCodeInfo" id="PostalCodeInfo" required="required">
+                            <p id="postalCodeError" class="errorMessage"></p>
+                        </div>
+                        <div>
+                            <label for="provinceInfo">Province:</label>
+                            <select id="provinceInfo" name="provinceInfo" required="required">
+                                <option value="BC">BC</option>
+                                <option value="QC">QC</option>
+                                <option value="ON">ON</option>
+                                <option value="AB">AB</option>
+                                <option value="MN">MN</option>
+                                <option value="SK">SK</option>
+                            </select>
+                            <p id="provinceError" class="errorMessage"></p>
+                        </div>
+                        <div>
+                            <label for="emailInfo">Email:</label>
+                            <input type="text" name="emailInfo" id="emailInfo" placeholder="name@example.com" required="required">
+                            <p id="emailError" class="errorMessage"></p>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Access Information</legend>
+                        <div>
+                            <label for="PasswordInfo">Password:</label>
+                            <input type="password" name="PasswordInfo" id="PasswordInfo" required="required">
+                        </div>
+                        <div>
+                            <label for="confirmInfo">Confirm:</label>
+                            <input type="password" name="confirmInfo" id="confirmInfo" required="required">
+                            <p id="passwordError" class="errorMessage"></p>
+                        </div>
+                    </fieldset> <br>
+                    <table style="width: 100%">
+                        <tr>
+                        <td><input type="reset" id="btnReset" name="btnReset" value="Clear Form" class="button"></td>
+                        <td><input type="button" id="btn" name="btnSubmit" value="Register" class="button" onclick="accountInfo()"></td>
+                        </tr>
+                    </table>
+                </form>
+                <br />
+                <fieldset id="yourInfo">
+                    <legend>Comfirm Your Information</legend>
+                    <section id="profile">
+                        <div id="proFirstName">
+                            <h4>First Name</h4>
+                            <p id="yourFirstName"></p>
+                        </div>
+                        <div id="urLastName">
+                            <h4>Last Name</h4>
+                            <p id="yourLastName"></p>
+                        </div>
+                        <div id="urAge">
+                            <h4>Age</h4>
+                            <p id="yourAge"></p>
+                        </div>
+                        <div id="urAddress">
+                            <h4>Address</h4>
+                            <p id="yourAddress"></p>
+                        </div>
+                        <div id="urCity">
+                            <h4>City</h4>
+                            <p id="yourCity"></p>
+                        </div>
+                        <div id="urPostalCode">
+                            <h4>Postal Code</h4>
+                            <p id="yourPostalCode"></p>
+                        </div>
+                        <div id="urProvince">
+                            <h4>Province</h4>
+                            <p id="yourProvince"></p>
+                        </div>
+                        <div id="urEmail">
+                            <h4>Email</h4>
+                            <p id="yourEmail"></p>
+                        </div>
+                    </section>
+                </fieldset>
+            </article>
+            <br />
+        </div>
+        <script src="assignment4.js"></script>
+    </body>
+</html>
